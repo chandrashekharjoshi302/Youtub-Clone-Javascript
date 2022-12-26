@@ -1,0 +1,106 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body {
+    
+    background-color: black;
+    opacity:0.8;
+  }
+  
+  /* Here starts navBar style */
+  #searchDiv {
+    background-color: #202020;
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    margin: auto;
+    padding: 5px 20px 5px 20px;
+  
+    /* gap: 10px; */
+  }
+  #searchDiv > a > img,
+  #profile {
+    width: 50px;
+    padding: -10px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* flex-grow: 1; */
+  }
+  #searchDiv > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: monospace;
+    letter-spacing: -2px;
+    display: flex;
+    align-items: center;
+  }
+  #input {
+    flex-grow: 3;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  #searchBtn {
+    cursor: pointer;
+    background-color: #313131;
+    border: none;
+    color: white;
+    width: 5%;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: 200;
+    /* margin-left: 20px; */
+  }
+  #query {
+    background-color: #121212;
+    border: none;
+    font-size: 20px;
+    padding: 10px 5px 10px 5px;
+    color: white;
+    width: 40%;
+  }
+  #query::placeholder {
+    color: gray;
+  }
+  
+  /* Navbar style ends */
+  
+  #container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    width: 90%;
+    margin: auto;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  #container > div {
+    padding: 5px;
+    cursor: pointer;
+  }
+  .vidName {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .channelName {
+    color: white;
+  }
+  .thumbnail:hover {
+    opacity: 0.5;
+  }
+  #vidContainer {
+    /* border: 1px solid red; */
+    height: 600px;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+  }
+  #iframe {
+    /* border: 3px solid greenyellow; */
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
