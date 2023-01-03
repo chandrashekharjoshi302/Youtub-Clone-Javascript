@@ -5,6 +5,7 @@ let apiKey = `AIzaSyD4q9eTGU1pkesnxaao0t33d9GPsnYMEIE`
 let id
 
 let search = async () => {
+    
     let query = document.querySelector("#query").value
 
     let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q=${query}&key=${apiKey}`
@@ -12,8 +13,7 @@ let search = async () => {
     let res = await fetch(url)
 
     let data = await res.json()
-   //console.log(data)
-  //console.log(data.items)
+  
     append(data.items)
 
 

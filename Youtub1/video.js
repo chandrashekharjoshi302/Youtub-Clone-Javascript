@@ -18,6 +18,7 @@ let videoAppend = (videoData) => {
     document.querySelector('#vidContainer').append(iframe)
 }
 
+
 videoAppend()
 
 document.querySelector("#profile").onclick = () =>{
